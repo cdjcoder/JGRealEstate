@@ -11,6 +11,7 @@ This directory should contain the following hero portrait images:
 - `joe-garcia-portrait-new.jpg` - New headshot image (primary format)
 - `joe-garcia-portrait-new.webp` - WebP version for better performance (optional)
 - `joe-garcia-portrait-new@2x.jpg` - High-resolution version for retina displays (optional)
+- `joe-garcia-portrait-new@2x.webp` - High-resolution WebP version for retina displays (optional)
 
 ## Image Requirements
 
