@@ -1,0 +1,23 @@
+<!-- 
+  PLACEHOLDER IMAGE - FOR DEVELOPMENT/TESTING ONLY
+  This is a temporary SVG placeholder to demonstrate the structure.
+  Replace with actual JPEG/WebP images as specified in README.md:
+  - joe-garcia-portrait-new.jpg
+  - joe-garcia-portrait-new.webp
+  - joe-garcia-portrait-new@2x.jpg
+  - joe-garcia-portrait-new@2x.webp
+-->
+<svg xmlns="http://www.w3.org/2000/svg" width="450" height="600" viewBox="0 0 450 600">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#b8941f;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#d4af37;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="450" height="600" fill="#0a0a0a"/>
+  <rect x="25" y="25" width="400" height="550" fill="url(#grad1)" opacity="0.1"/>
+  <text x="225" y="280" font-family="Arial, sans-serif" font-size="24" fill="#d4af37" text-anchor="middle" font-weight="bold">Joe Garcia</text>
+  <text x="225" y="310" font-family="Arial, sans-serif" font-size="16" fill="#b8b8b8" text-anchor="middle">Professional Headshot</text>
+  <text x="225" y="340" font-family="Arial, sans-serif" font-size="14" fill="#808080" text-anchor="middle">450 × 600 px</text>
+  <text x="225" y="365" font-family="Arial, sans-serif" font-size="12" fill="#808080" text-anchor="middle" opacity="0.7">Replace with actual image</text>
+</svg>
