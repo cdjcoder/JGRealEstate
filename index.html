@@ -6,7 +6,7 @@
     <meta name="description" content="Joe Garcia - Professional Real Estate Agent & Loan Officer serving Pico Rivera, LA County, and Orange County. NMLS# 1550915 | DRE# 01263425">
     <meta property="og:title" content="Joe Garcia - Real Estate Agent & Loan Officer">
     <meta property="og:description" content="Your trusted partner for buying, selling, and financing homes in Southern California">
-    <meta property="og:image" content="images/joe-garcia-portrait.jpg">
+    <meta property="og:image" content="images/joe-garcia-portrait-new.jpg">
     <title>Joe Garcia | Real Estate Agent & Loan Officer</title>
     
     <!-- Google Fonts -->
@@ -110,9 +110,23 @@
                 
                 <div class="hero-image">
                     <div class="hero-image-wrapper">
-                        <img src="images/joe-garcia-portrait.jpg" 
-                             alt="Joe Garcia - Professional Real Estate Agent and Loan Officer" 
-                             class="hero-portrait">
+                        <picture>
+                            <source 
+                                type="image/webp"
+                                srcset="images/joe-garcia-portrait-new.webp 1x, 
+                                        images/joe-garcia-portrait-new@2x.webp 2x">
+                            <source 
+                                type="image/jpeg"
+                                srcset="images/joe-garcia-portrait-new.jpg 1x, 
+                                        images/joe-garcia-portrait-new@2x.jpg 2x">
+                            <img 
+                                src="images/joe-garcia-portrait-new.jpg" 
+                                alt="Joe Garcia - Professional Real Estate Agent and Loan Officer" 
+                                class="hero-portrait"
+                                loading="lazy"
+                                width="450"
+                                height="600">
+                        </picture>
                         <div class="hero-image-glow"></div>
                     </div>
                 </div>
