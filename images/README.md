@@ -4,8 +4,8 @@
 
 This directory should contain the following hero portrait images:
 
-### Current Image (to be preserved)
-- `joe-garcia-portrait.jpg` - Original portrait image (not present yet, referenced in index.html)
+### Current Image (preserved, not in use)
+- `joe-garcia-portrait.jpg` - Original portrait image filename (was previously referenced, now replaced with new filename)
 
 ### New Headshot Images (to be added)
 - `joe-garcia-portrait-new.jpg` - New headshot image (primary format)
