@@ -14,14 +14,13 @@ The hero section markup has been successfully updated to use a modern `<picture>
    - Replaced simple `<img>` with modern `<picture>` element
    - Added WebP source with JPEG fallback
    - Implemented responsive srcset for 1x and 2x displays
-   - Added loading="lazy" for performance
    - Included width/height attributes to prevent layout shift
    - Updated Open Graph meta tag
 
 3. **Modern Best Practices Applied**
    - Progressive enhancement (WebP → JPEG)
    - Responsive images for different pixel densities
-   - Performance optimization with lazy loading
+   - Performance optimization with explicit dimensions
    - Accessibility maintained with proper alt text
 
 ## What's Needed Next 📋
@@ -76,7 +75,6 @@ The following image files need to be added to the `images/` directory:
         src="images/joe-garcia-portrait-new.jpg" 
         alt="Joe Garcia - Professional Real Estate Agent and Loan Officer" 
         class="hero-portrait"
-        loading="lazy"
         width="450"
         height="600">
 </picture>
@@ -98,8 +96,8 @@ Once images are added, verify:
 - [ ] WebP format is served to supporting browsers
 - [ ] JPEG format is served as fallback
 - [ ] Retina displays receive higher resolution images
-- [ ] Layout doesn't shift when images load (width/height attributes)
-- [ ] Lazy loading works (image loads when scrolling into view)
+- [ ] Layout doesn't shift when images load (width/height attributes prevent CLS)
+- [ ] Images load immediately (no lazy loading for above-the-fold hero)
 - [ ] Open Graph image appears correctly when sharing on social media
 
 ## Preserved Original Reference
