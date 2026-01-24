@@ -745,6 +745,44 @@ h1, h2, h3, h4 {
 }
 
 /* ===================================
+   PRIVACY POLICY
+   =================================== */
+.policy-page .nav {
+    background: rgba(10, 10, 10, 0.9);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.policy-section {
+    padding-top: 8rem;
+}
+
+.policy-card {
+    padding: 2.5rem;
+}
+
+.policy-content h2 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+
+.policy-content p {
+    margin-bottom: 1rem;
+    color: #b8b8b8;
+}
+
+.policy-content ul {
+    margin: 0 0 1rem 1.25rem;
+    color: #b8b8b8;
+}
+
+.policy-content li {
+    margin-bottom: 0.5rem;
+}
+
+/* ===================================
    FOOTER
    =================================== */
 .footer {
