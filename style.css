@@ -709,6 +709,23 @@ h1, h2, h3, h4 {
     resize: vertical;
 }
 
+.form-consent {
+    margin-bottom: 1.5rem;
+    font-size: 0.875rem;
+    line-height: 1.6;
+    color: #b8b8b8;
+}
+
+.form-consent a {
+    color: #d4af37;
+    text-decoration: none;
+}
+
+.form-consent a:hover {
+    color: #f0c850;
+    text-decoration: underline;
+}
+
 .form-privacy {
     display: flex;
     align-items: center;
