@@ -99,6 +99,7 @@ h1, h2, h3, h4 {
     position: relative;
     overflow: hidden;
     box-shadow: 0 6px 20px rgba(212, 175, 55, 0.35);
+    animation: callShake 6s ease-in-out infinite;
 }
 
 .call-cta::after {
@@ -122,7 +123,19 @@ h1, h2, h3, h4 {
     100% { transform: translateX(120%); }
 }
 
+@keyframes callShake {
+    0%, 78%, 100% { transform: translateY(0); }
+    80% { transform: translateY(-1px); }
+    82% { transform: translateY(1px); }
+    84% { transform: translateY(-1px); }
+    86% { transform: translateY(0); }
+}
+
 @media (prefers-reduced-motion: reduce) {
+    .call-cta {
+        animation: none;
+    }
+
     .call-cta::after {
         animation: none;
     }
