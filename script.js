@@ -138,8 +138,9 @@ function setLanguage(lang) {
     localStorage.setItem('lang', lang);
     document.documentElement.lang = lang;
     
-    const langBtn = document.querySelector('.lang-text');
-    if (langBtn) langBtn.textContent = lang === 'en' ? 'ES' : 'EN';
+    document.querySelectorAll('.lang-text').forEach((langBtn) => {
+        langBtn.textContent = lang === 'en' ? 'ES' : 'EN';
+    });
     
     document.querySelectorAll('[data-lang]').forEach(el => {
         const key = el.getAttribute('data-lang');
@@ -149,8 +150,10 @@ function setLanguage(lang) {
     });
 }
 
-document.getElementById('langToggle')?.addEventListener('click', () => {
-    setLanguage(currentLang === 'en' ? 'es' : 'en');
+document.querySelectorAll('.lang-toggle-btn').forEach((button) => {
+    button.addEventListener('click', () => {
+        setLanguage(currentLang === 'en' ? 'es' : 'en');
+    });
 });
 
 // ===================================
