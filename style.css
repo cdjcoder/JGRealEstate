@@ -95,6 +95,39 @@ h1, h2, h3, h4 {
     color: #0a0a0a;
 }
 
+.call-cta {
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 6px 20px rgba(212, 175, 55, 0.35);
+}
+
+.call-cta::after {
+    content: '';
+    position: absolute;
+    inset: -2px;
+    background: linear-gradient(120deg, transparent 0%, rgba(255, 255, 255, 0.45) 50%, transparent 100%);
+    transform: translateX(-120%);
+    animation: callShimmer 3.5s ease-in-out infinite;
+    pointer-events: none;
+    opacity: 0.7;
+}
+
+.call-cta:hover {
+    box-shadow: 0 10px 30px rgba(212, 175, 55, 0.5);
+}
+
+@keyframes callShimmer {
+    0% { transform: translateX(-120%); }
+    50% { transform: translateX(0%); }
+    100% { transform: translateX(120%); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .call-cta::after {
+        animation: none;
+    }
+}
+
 .btn-glow {
     box-shadow: 0 4px 20px rgba(212, 175, 55, 0.3);
 }
