@@ -302,6 +302,10 @@ h1, h2, h3, h4 {
     transition: all 0.3s ease;
 }
 
+.lang-toggle-mobile {
+    display: none;
+}
+
 .lang-toggle-btn:hover {
     background: rgba(212, 175, 55, 0.2);
     transform: scale(1.05);
@@ -973,6 +977,7 @@ h1, h2, h3, h4 {
     
     .nav-toggle {
         display: flex;
+        margin-left: auto;
     }
     
     .nav-menu {
@@ -1018,9 +1023,7 @@ h1, h2, h3, h4 {
     }
     
     .nav-lang-toggle {
-        width: 100%;
-        padding-top: 1rem;
-        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        display: none;
     }
     
     .lang-toggle-btn {
@@ -1028,6 +1031,14 @@ h1, h2, h3, h4 {
         justify-content: center;
         padding: 0.75rem 1rem;
         font-size: 1rem;
+    }
+
+    .lang-toggle-mobile {
+        display: inline-flex;
+        width: auto;
+        padding: 0.4rem 0.75rem;
+        font-size: 0.85rem;
+        margin-left: 0.5rem;
     }
     
     .hero {
