@@ -148,6 +148,10 @@ function setLanguage(lang) {
             el.textContent = translations[lang][key];
         }
     });
+
+    document.querySelectorAll('[data-glow]').forEach(el => {
+        el.setAttribute('data-text', el.textContent.trim());
+    });
 }
 
 document.querySelectorAll('.lang-toggle-btn').forEach((button) => {
